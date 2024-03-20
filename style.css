@@ -1,0 +1,66 @@
+body {
+   
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://img.freepik.com/vector-gratis/conjunto-numeros-futuristas-retro-digitales_120409-1782.jpg?size=626&ext=jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajustar el tamaño de la imagen al tamaño del cuerpo */
+    background-position: center; /* Centrar la imagen en el cuerpo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+#calculator {
+    background-color: #0f0f10;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+}
+
+#display {
+    font-size: 2em;
+    padding: 10px;
+    text-align: right;
+    color: #08cf54;
+    border-bottom: 2px solid #95a5a6;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    font-size: 1.5em;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #95a5a6;
+    color: #ecf0f1;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button.operator {
+    background-color: #e74c3c;
+}
+
+button.double {
+    grid-column: span 2;
+}
+
+button.equal {
+    background-color: #e74c3c;
+}
+
+button:hover {
+    background-color: #31dce8;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
